@@ -1,1 +1,389 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+MRFX Admin Dashboard
+</title>
+
+<link rel="stylesheet"
+href="css/dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="brand">
+
+MRFX.ADITYA
+
+</div>
+
+<ul>
+
+<li>
+<a href="#">
+<i class="fa fa-chart-line"></i>
+Dashboard
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="fa fa-users"></i>
+Customers
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="fa fa-calendar"></i>
+Bookings
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="fa fa-images"></i>
+Gallery
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="fa fa-upload"></i>
+Upload Photos
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="fa fa-money-bill"></i>
+Payments
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="fa fa-chart-pie"></i>
+Analytics
+</a>
+</li>
+
+<li>
+<a href="#"
+onclick="logout()">
+
+<i class="fa fa-sign-out-alt"></i>
+
+Logout
+
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="main-content">
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+<h1>
+
+Admin Dashboard
+
+</h1>
+
+</div>
+
+<!-- STATS -->
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h2 id="customers">
+
+150
+
+</h2>
+
+<p>
+
+Customers
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="bookings">
+
+85
+
+</h2>
+
+<p>
+
+Bookings
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="photos">
+
+12450
+
+</h2>
+
+<p>
+
+Photos
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="revenue">
+
+₹8.5L
+
+</h2>
+
+<p>
+
+Revenue
+
+</p>
+
+</div>
+
+</div>
+
+<!-- PHOTO UPLOAD -->
+
+<div class="dashboard-section">
+
+<h2>
+
+Upload Customer Photos
+
+</h2>
+
+<input
+type="file"
+multiple>
+
+<button>
+
+Upload
+
+</button>
+
+</div>
+
+<!-- GALLERY CODE -->
+
+<div class="dashboard-section">
+
+<h2>
+
+Generate Gallery Code
+
+</h2>
+
+<input
+type="text"
+placeholder="Customer Name">
+
+<select>
+
+<option>
+Wedding
+</option>
+
+<option>
+Birthday
+</option>
+
+<option>
+Pre Wedding
+</option>
+
+<option>
+Event
+</option>
+
+</select>
+
+<button>
+
+Generate Code
+
+</button>
+
+</div>
+
+<!-- CUSTOMER TABLE -->
+
+<div class="dashboard-section">
+
+<h2>
+
+Recent Customers
+
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+ID
+</th>
+
+<th>
+Name
+</th>
+
+<th>
+Phone
+</th>
+
+<th>
+Package
+</th>
+
+<th>
+Gallery Code
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+1
+</td>
+
+<td>
+Rahul Singh
+</td>
+
+<td>
+9876543210
+</td>
+
+<td>
+Gold
+</td>
+
+<td>
+MRFX-2026-WED-1023
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+2
+</td>
+
+<td>
+Aman Kumar
+</td>
+
+<td>
+9123456780
+</td>
+
+<td>
+Silver
+</td>
+
+<td>
+MRFX-2026-BIR-5542
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- ACTIVITY -->
+
+<div class="dashboard-section">
+
+<h2>
+
+Recent Activity
+
+</h2>
+
+<ul class="activity-list">
+
+<li>
+Customer Booking Added
+</li>
+
+<li>
+Photos Uploaded
+</li>
+
+<li>
+Gallery Created
+</li>
+
+<li>
+Payment Received
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<script
+src="js/dashboard.js">
+
+</script>
+
+</body>
+
+</html>
